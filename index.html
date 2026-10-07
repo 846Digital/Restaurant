@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>MAISON · Свадебный ресторан и банкетный дом</title>
+  <meta name="description" content="MAISON — концепция свадебного ресторана. Пространства для церемонии и ужина, сезонная кухня и ваш собственный сценарий вечера.">
+  <meta name="theme-color" content="#191b1a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23191b1a'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-family='serif' font-size='28' fill='%23e9dcc2'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/restaurant.css">
+  <link rel="preload" as="image" href="./assets/restaurant-hall.webp" fetchpriority="high">
+  <script defer src="./assets/gsap.min.js"></script><script defer src="./assets/ScrollTrigger.min.js"></script>
+  <script defer src="./assets/restaurant-config.js"></script><script defer src="./assets/restaurant.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <div class="opening" aria-hidden="true">
+    <div class="opening-left"></div><div class="opening-right"></div>
+    <div class="opening-emblem"><svg viewBox="0 0 120 160" aria-hidden="true"><path d="M15 150V62a45 45 0 0 1 90 0v88M30 150V62a30 30 0 0 1 60 0v88"/><path d="M40 112V76l20 24 20-24v36"/></svg><span data-restaurant="name">MAISON</span></div>
+    <button class="opening-skip" tabindex="-1">Пропустить ↗</button>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="MAISON — начало страницы"><span data-restaurant="name">MAISON</span><small>BANQUET HOUSE</small></a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="site-menu"><span></span><span></span></button>
+  </header>
+  <dialog id="site-menu" class="menu-dialog"><div class="menu-top"><span class="eyebrow" data-restaurant="name">MAISON</span><button class="menu-close" aria-label="Закрыть меню">✕</button></div><nav aria-label="Полное меню"><a href="#spaces"><small>01</small> Пространства <span>↗</span></a><a href="#cuisine"><small>02</small> Кухня <span>↗</span></a><a href="#details"><small>03</small> Детали <span>↗</span></a><a href="#contact"><small>04</small> Ваш вечер <span>↗</span></a></nav><p>Есть вечера,<br>которые остаются навсегда.</p></dialog>
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo"><img src="./assets/restaurant-hall.webp" data-image="hall" width="1536" height="1024" alt="Банкетный зал с арочными окнами, светлыми столами и свечами" fetchpriority="high"><div class="hero-shade"></div></div>
+      <div class="hero-architecture" aria-hidden="true"><svg viewBox="0 0 1000 800" preserveAspectRatio="none"><path d="M100 800V400C100-50 900-50 900 400V800"/><path d="M130 800V400C130-10 870-10 870 400V800"/></svg></div>
+      <div class="hero-caption"><span class="eyebrow">Ресторан · свадьбы · особенные вечера</span><span class="hero-coordinate">A PLACE TO REMEMBER</span></div>
+      <h1 id="hero-title" data-restaurant="name">MAISON</h1>
+      <div class="hero-bottom"><p>Место для вашего<br>навсегда.</p><a href="#welcome" class="discover"><span>Откройте нашу историю</span><svg viewBox="0 0 24 40" aria-hidden="true"><path d="M12 1v35M3 27l9 10 9-10"/></svg></a><span class="hero-side">EST. YOUR STORY</span></div>
+    </section>
+
+    <section id="welcome" class="welcome section-pad" aria-labelledby="welcome-title">
+      <div class="welcome-label"><span class="eyebrow">Искусство принимать</span><svg class="house-mark" viewBox="0 0 100 140" aria-hidden="true"><path d="M10 135V55a40 40 0 0 1 80 0v80M25 135V55a25 25 0 0 1 50 0v80"/><path d="M32 104V68l18 23 18-23v36"/></svg></div>
+      <div><h2 id="welcome-title" class="word-reveal">Ваш вечер.<br>Свой характер.<br><span>Безупречный вкус.</span></h2><div class="welcome-copy"><p data-restaurant="introduction">Тёплый свет на камне. Тихий звон бокалов. Длинный стол, за которым все свои. Мы начинаем с того, каким вы хотите запомнить этот день.</p><a class="line-link" href="#spaces">Выбрать зал <span>↗</span></a></div></div>
+      <span class="margin-note" aria-hidden="true">EVERY DETAIL, A FEELING.</span>
+    </section>
+
+    <section id="spaces" class="spaces" aria-labelledby="spaces-title">
+      <div class="section-top section-pad"><span class="eyebrow">01 / Пространства</span><h2 id="spaces-title">Три настроения.<br>Один ваш день.</h2><p>От первого «да»<br>до последнего танца.</p></div>
+      <div class="room-stage">
+        <article class="room room-salon" id="salon" data-room="0" aria-labelledby="salon-title">
+          <img class="room-photo" data-image="hall" src="./assets/restaurant-hall.webp" width="1536" height="1024" alt="Большой светлый салон с арочными окнами" loading="lazy"><div class="room-shade"></div>
+          <div class="room-copy"><span class="eyebrow">01 / Le grand salon</span><h3 id="salon-title">Большой<br>салон.</h3><p>Высокие арки, длинные столы и тёплый свет. Пространство для торжественного ужина, который незаметно становится вашим любимым вечером.</p><a class="line-link" href="#contact">Этот салон <span>↗</span></a></div><span class="room-script" aria-hidden="true">le grand salon</span>
+        </article>
+        <article class="room room-terrace" id="terrace" data-room="1" aria-labelledby="terrace-title">
+          <img class="room-photo" data-image="terrace" src="./assets/restaurant-terrace.webp" width="1536" height="1024" alt="Вечерняя терраса с оливковыми деревьями и свечами" loading="lazy"><div class="room-shade"></div>
+          <div class="room-copy"><span class="eyebrow">02 / Le jardin</span><h3 id="terrace-title">Садовая<br>терраса.</h3><p>Церемония на воздухе, бокал на закате, разговоры среди зелени. Здесь легко забыть о времени и просто быть рядом.</p><a class="line-link" href="#contact">Эта терраса <span>↗</span></a></div><span class="room-script" aria-hidden="true">le jardin</span>
+        </article>
+        <article class="room room-private" id="private" data-room="2" aria-labelledby="private-title">
+          <img class="room-photo" data-image="private" src="./assets/restaurant-hall.webp" width="1536" height="1024" alt="Камерная часть банкетного салона с накрытыми столами" loading="lazy"><div class="room-shade"></div>
+          <div class="room-copy"><span class="eyebrow">03 / La table privée</span><h3 id="private-title">Камерный<br>вечер.</h3><p>Близкие люди за одним столом. Личные тосты, неспешный ужин и внимание к каждому гостю — для истории, которой не нужна большая сцена.</p><a class="line-link" href="#contact">Камерный ужин <span>↗</span></a></div><span class="room-script" aria-hidden="true">la table privée</span>
+        </article>
+        <div class="room-controls" aria-label="Выбрать пространство"><span class="eyebrow">Выберите настроение</span><div><button data-room-jump="0" aria-pressed="true">Салон</button><button data-room-jump="1" aria-pressed="false">Терраса</button><button data-room-jump="2" aria-pressed="false">Камерно</button></div><span class="room-index" aria-hidden="true"><b>01</b> / 03</span></div>
+      </div>
+    </section>
+
+    <div class="type-ribbon" aria-hidden="true"><p>ХОРОШИЙ ВКУС <span>✦</span> БОЛЬШИЕ ЧУВСТВА <span>✦</span> ХОРОШИЙ ВКУС <span>✦</span></p></div>
+
+    <section id="cuisine" class="cuisine section-pad" aria-labelledby="cuisine-title">
+      <div class="cuisine-head"><span class="eyebrow">02 / Кухня</span><h2 id="cuisine-title">Вкус, который<br>остаётся<br><span>в памяти.</span></h2><p>Сезонные продукты. Точная подача.<br>Меню, собранное вокруг вашего вечера.</p></div>
+      <div class="cuisine-visual"><div class="plate-frame"><img data-image="cuisine" src="./assets/restaurant-cuisine.webp" width="1536" height="1024" alt="Сезонное блюдо на керамической тарелке — концепция меню" loading="lazy"></div><span class="plate-caption">SEASONAL · PERSONAL · CONSIDERED</span><svg class="plate-orbit" viewBox="0 0 300 300" aria-hidden="true"><circle cx="150" cy="150" r="140"/><path d="M150 0v20M150 280v20M0 150h20M280 150h20"/></svg></div>
+      <div class="menu-story"><span class="eyebrow">Три части одной истории</span><ol><li><span>01</span><div><h3>Первый бокал</h3><p>Лёгкое начало, небольшие закуски и время познакомиться.</p></div><i aria-hidden="true">↗</i></li><li><span>02</span><div><h3>Долгий ужин</h3><p>Сезонное меню, любимые вкусы и внимание к пожеланиям гостей.</p></div><i aria-hidden="true">↗</i></li><li><span>03</span><div><h3>Сладкий финал</h3><p>Десерт, который хочется разделить. И ещё один повод остаться.</p></div><i aria-hidden="true">↗</i></li></ol><a href="#contact" class="line-link">Ваше меню <span>↗</span></a></div>
+    </section>
+
+    <section class="gallery" aria-labelledby="gallery-title"><div class="gallery-head section-pad"><span class="eyebrow">Ощущение места</span><h2 id="gallery-title">Свет. Фактура.<br>Предвкушение.</h2><div class="gallery-buttons"><button data-gallery-prev aria-label="Предыдущий кадр">←</button><button data-gallery-next aria-label="Следующий кадр">→</button></div></div><div class="gallery-window" tabindex="0" aria-label="Фотографии пространства; листайте стрелками"><div class="gallery-track"><figure><img data-image="hall" src="./assets/restaurant-hall.webp" width="1536" height="1024" alt="Солнечный свет в большом банкетном салоне" loading="lazy"><figcaption><span>01 — Свет сквозь арки</span><span>MAISON / SALON</span></figcaption></figure><figure><img data-image="terrace" src="./assets/restaurant-terrace.webp" width="1536" height="1024" alt="Оливковые деревья и столы в саду на закате" loading="lazy"><figcaption><span>02 — Вечер в саду</span><span>MAISON / JARDIN</span></figcaption></figure><figure><img data-image="cuisine" src="./assets/restaurant-cuisine.webp" width="1536" height="1024" alt="Детали подачи сезонного блюда" loading="lazy"><figcaption><span>03 — Внимание к вкусу</span><span>MAISON / TABLE</span></figcaption></figure></div></div><p class="gallery-hint section-pad">Три кадра — одно настроение. <span aria-hidden="true">↔</span></p></section>
+
+    <section id="details" class="details section-pad" aria-labelledby="details-title"><div class="details-head"><span class="eyebrow">03 / Детали</span><h2 id="details-title">Всё складывается.<br><span>Когда думают о вас.</span></h2><svg class="details-arch" viewBox="0 0 180 260" aria-hidden="true"><path d="M10 260V90a80 80 0 0 1 160 0v170M30 260V90a60 60 0 0 1 120 0v170"/><path d="M60 195l25 25 45-55"/></svg></div><div class="detail-lines"><article><span>01</span><h3>Ваш сценарий</h3><p>Церемония, ужин, танцы. Обсудим ритм вечера и соберём пространства под него.</p></article><article><span>02</span><h3>Ваше меню</h3><p>Учтём любимые блюда и особенности питания. Финальное меню согласуем лично.</p></article><article><span>03</span><h3>Ваше настроение</h3><p>Цвет, свет, рассадка, цветы. Детали должны звучать вместе, а не спорить за внимание.</p></article><article><span>04</span><h3>Ваши люди</h3><p>Важно, чтобы каждому было удобно. Обсудим логистику и пожелания гостей заранее.</p></article></div></section>
+
+    <section class="evening" aria-labelledby="evening-title"><div class="evening-photo"><img data-image="terrace" src="./assets/restaurant-terrace.webp" width="1536" height="1024" alt="Вечерняя терраса в свете свечей" loading="lazy"></div><div class="evening-shade"></div><div class="evening-words"><span class="eyebrow">Некоторые мгновения — навсегда</span><h2 id="evening-title"><span>Когда все</span><span>самые близкие</span><span>— рядом.</span></h2><a href="#contact" class="line-link">Ваш вечер <span>↗</span></a></div></section>
+
+    <section id="contact" class="contact section-pad" aria-labelledby="contact-title"><div class="contact-head"><span class="eyebrow">04 / Ваш вечер</span><h2 id="contact-title">Давайте<br><span>представим его.</span></h2><p>Расскажите, что для вас важно.<br>Дата, любимые люди и ваше настроение.</p><div class="contact-links"><a data-contact="phone" hidden class="line-link"></a><a data-contact="email" hidden class="line-link"></a><a data-contact="map" hidden class="line-link">Построить маршрут ↗</a><p data-restaurant="address" hidden></p></div><p class="request-note" data-request-note>Сохраните пожелания — к ним удобно вернуться при обсуждении площадки.</p></div><form class="enquiry-form"><div class="form-pair"><label>Ваше имя<input name="name" autocomplete="given-name" required maxlength="100" placeholder="Как к вам обращаться"></label><label>Дата вечера<input type="date" name="date" required></label></div><div class="form-pair"><label>Количество гостей<input type="number" name="guests" min="2" max="1000" required inputmode="numeric" placeholder="Например, 60"></label><label>Пространство<select name="space"><option>Большой салон</option><option>Садовая терраса</option><option>Камерный вечер</option><option>Пока выбираю</option></select></label></div><label>Пожелания<textarea name="message" rows="3" maxlength="2000" placeholder="Каким вы представляете этот вечер?"></textarea></label><button class="request-button" type="submit"><span data-submit-label>Сохранить план</span><span aria-hidden="true">↗</span></button><p class="form-explanation" data-form-explanation>Пожелания сохранятся файлом на вашем устройстве.</p><p class="form-status" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><span class="eyebrow">У хороших вечеров есть свой дом.</span><button class="replay" data-replay>Открыть снова ↻</button></div><p class="footer-brand" data-restaurant="name" aria-hidden="true">MAISON</p><div class="footer-bottom"><span>Свадебный ресторан · Банкетный дом</span><span data-restaurant="conceptLabel">Демонстрационная концепция</span></div></footer>
+</body></html>
